@@ -34,5 +34,16 @@ namespace MyConstructionApp_CAJIACO.Views
             await Navigation.PushAsync(new ConstructionsListPage());
 
         }
+
+        private async void BtnCategoryConstrucion_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CategoryConstrucion());
+        }
+
+        private async void BtnAdvanceConstrucion_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AdvanceConstrucion());
+
+        }
     }
 }
