@@ -45,5 +45,10 @@ namespace MyConstructionApp_CAJIACO.Views
             await Navigation.PushAsync(new AdvanceConstrucion());
 
         }
+
+        private async void BtnCreateTypeconstrucion_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CreateTypeconstrucion());
+        }
     }
 }

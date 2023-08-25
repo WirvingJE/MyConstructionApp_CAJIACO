@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyConstructionApp_CAJIACO.Views.CreateTypeconstrucion">
+    <ContentPage.Content>
+        <StackLayout Padding="20" >
+
+            <Entry x:Name="TxtName" Placeholder="Name" Keyboard="Email" ClearButtonVisibility="WhileEditing" >
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
+                        <Setter Property="BackgroundColor" Value="DarkOrchid"/>
+                        <Setter Property="TextColor" Value="WhiteSmoke"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+
+            <Entry x:Name="TxtDescription" Placeholder="Description" Keyboard="Plain" ClearButtonVisibility="WhileEditing">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
+                        <Setter Property="BackgroundColor" Value="DarkOrchid"/>
+                        <Setter Property="TextColor" Value="WhiteSmoke"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+
+            <Entry x:Name="TxtDate" Placeholder="Date" Keyboard="Text" ClearButtonVisibility="WhileEditing">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
+                        <Setter Property="BackgroundColor" Value="DarkOrchid"/>
+                        <Setter Property="TextColor" Value="WhiteSmoke"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+
+
+            <Picker x:Name="PkrIDUser" Title="Select IDUser " ItemDisplayBinding="{Binding Description}">
+            </Picker>
+            <Picker x:Name="PkrConstructionCategory" Title="Select Category Construction " ItemDisplayBinding="{Binding Description}">
+            </Picker>
+
+            <StackLayout Orientation="Horizontal" >
+                <Button x:Name="BtnAdd" Text="Apply" CornerRadius="15" BackgroundColor="DarkGreen" FontSize="20" Clicked="BtnAdd_Clicked" />
+                <Button x:Name="BtnCancel" Text="Cancel" CornerRadius="15" BackgroundColor="Maroon" FontSize="20" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage> 

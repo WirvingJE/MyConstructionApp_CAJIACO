@@ -55,6 +55,15 @@
                             CornerRadius="25" BorderColor="#B6B4B4" BorderWidth="2" 
                             Clicked="BtnAdvanceConstrucion_Clicked"/>
 
+                    <Button Grid.Column="1" Grid.Row="2"
+                       x:Name="BtnAdvanceConstrucio" Text="Crear nuevos tipos de las construcciones"
+                        BackgroundColor="#9B76A7" TextColor="White"
+                        HeightRequest="150" WidthRequest="100"
+                        CornerRadius="25" BorderColor="#B6B4B4" BorderWidth="2" 
+                        Clicked="BtnCreateTypeconstrucion_Clicked"/>
+
+
+
                 </Grid>
 
 
