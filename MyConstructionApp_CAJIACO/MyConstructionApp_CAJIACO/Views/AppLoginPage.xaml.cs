@@ -15,8 +15,7 @@ namespace MyConstructionApp_CAJIACO.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AppLoginPage : ContentPage
     {
-        //se realiza el anclaje entre esta vista y el VM que le da la 
-        //funcionalidad 
+        
 
         UserViewModel viewModel;
 
@@ -62,8 +61,7 @@ namespace MyConstructionApp_CAJIACO.Views
 
                     if (R)
                     {
-                        //si la validación es correcta se permite el ingreso al sistema 
-                        //igual que el progra 5 vamos a tener un usuario global 
+                        
 
                         GlobalObjects.MyLocalUser = await viewModel.GetUserDataAsync(TxtUserName.Text.Trim());
 

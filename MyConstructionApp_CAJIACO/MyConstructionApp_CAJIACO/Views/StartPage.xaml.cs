@@ -29,7 +29,7 @@ namespace MyConstructionApp_CAJIACO.Views
             await Navigation.PushAsync(new UserManagmentPage());
         }
 
-        private async void BtnProtocolManagment_Clicked(object sender, EventArgs e)
+        private async void BtnTypeConstrucion_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ConstructionsListPage());
 

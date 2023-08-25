@@ -8,16 +8,7 @@ namespace MyConstructionApp_CAJIACO.ViewModels
 {
     public class UserViewModel : BaseViewModel
     {
-        //el VM funciona como puente entre el modelo y la vista 
-        //en sentido teórico el vm "siente" los cambios de la vista 
-        //y los pasa al modelo de forma automática, o viceversa
-        //según se use en uno o dos sentidos. 
-
-        //también se puede usar (como en este caso particular, 
-        //simplemente como mediador de procesos. Más adelante se usará 
-        //commands y bindings en dos sentidos 
-
-        //primero en formato de funciones clásicas
+     
         public User MyUser { get; set; }
 
         public UserRole MyUserRole { get; set; }
@@ -31,9 +22,7 @@ namespace MyConstructionApp_CAJIACO.ViewModels
             MyUserDTO = new UserDTO();
         }
 
-        //funciones 
-
-        //funcion que carga los datos del objeto de usuario global 
+       
         public async Task<UserDTO> GetUserDataAsync(string pEmail)
         {
             if (IsBusy) return null;
@@ -89,13 +78,7 @@ namespace MyConstructionApp_CAJIACO.ViewModels
 
         public async Task<bool> UserAccessValidation(string pEmail, string pPassword)
         {
-            //debemos poder controlar que no se ejecute la operación más de una vez 
-            //en este caso hay una funcionalidad pensada para eso en BaseViewModel que 
-            //fue heredada al definir esta clase. 
-            //Se usará una propiedad llamada "IsBusy" para indicar que está en proceso de ejecución
-            //mientras su valor sea verdadero 
-
-            //control de bloqueo de funcionalidad 
+            
             if (IsBusy) return false;
             IsBusy = true;
 
@@ -122,8 +105,6 @@ namespace MyConstructionApp_CAJIACO.ViewModels
             }
         }
 
-        //carga la lista de roles, que se usaran por ejemplo en el picker de roles en la
-        //creación de un usuario nuevo
         public async Task<List<UserRole>> GetUserRolesAsync()
         {
             try

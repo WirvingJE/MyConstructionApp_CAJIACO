@@ -28,11 +28,11 @@
                     </Grid.RowDefinitions>
 
                     <Button Grid.Column="0" Grid.Row="0"
-                            x:Name="BtnProtocolManagment" Text="Tipo de las Construcciones"
+                            x:Name="BtnTypeConstrucion" Text="Tipo de las Construcciones"
                             BackgroundColor="#68B0AB" TextColor="White"
                             HeightRequest="150" WidthRequest="100"
                             CornerRadius="25" BorderColor="#B6B4B4" BorderWidth="2" 
-                             Clicked="BtnProtocolManagment_Clicked"/>
+                             Clicked="BtnTypeConstrucion_Clicked"/>
 
                     <Button Grid.Column="1" Grid.Row="0"
                             x:Name="BtnUserManagment" Text="Gestión de Usuarios"
@@ -42,13 +42,13 @@
                             Clicked="BtnUserManagment_Clicked"/>
 
                     <Button Grid.Column="0" Grid.Row="1"
-                            x:Name="BtnCategoryManagment" Text="Categoria de las Construccion"
+                            x:Name="BtnCategoryConstrucion" Text="Categoria de las Construccion"
                             BackgroundColor="#9FA336" TextColor="White"
                             HeightRequest="150" WidthRequest="100"
                             CornerRadius="25" BorderColor="#B6B4B4" BorderWidth="2"  />
 
                     <Button Grid.Column="1" Grid.Row="1"
-                            x:Name="BtnStepsManagment" Text="Avances de las construcciones"
+                            x:Name="BtnAvanceConstrucion" Text="Avances de las construcciones"
                             BackgroundColor="#9B76A7" TextColor="White"
                             HeightRequest="150" WidthRequest="100"
                             CornerRadius="25" BorderColor="#B6B4B4" BorderWidth="2"  />

@@ -11,10 +11,10 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" Padding="50, 25, 50,25" >
 
-            <Entry x:Name="TxtUserName" Placeholder="Email" FontSize="30" Keyboard="Email" TextColor="#0C0A0A"/>
+            <Entry x:Name="TxtUserName" Placeholder="Email" FontSize="30" Keyboard="Email" TextColor="AliceBlue"/>
 
             <Entry x:Name="TxtPassword" Placeholder="Password" FontSize="30" 
-                   Keyboard="Default" IsPassword="True" />
+                   Keyboard="Default" TextColor="AliceBlue" IsPassword="True" />
 
             <Switch x:Name="SwShowPassword" IsToggled="False" Toggled="SwShowPassword_Toggled" />
 
